@@ -15,7 +15,7 @@ public class Muggle extends Persoa{
 
     @Override
     public boolean eMaiorIdade() {
-        if (calcularIdade() > 18) {
+        if (calcularIdade() >= 18) {
             return true;
         }else {
             return false;
@@ -25,7 +25,9 @@ public class Muggle extends Persoa{
     @Override
     public String toString() {
         return "Muggle{" +
-                "crearMaxia=" + crearMaxia +
+                "nombre: " + nome +
+                " fecha nacimiento: " + fechaNacimiento +
+                " crearMaxia=" + crearMaxia +
                 '}';
     }
 }

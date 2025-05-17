@@ -2,13 +2,14 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public abstract class Persoa {
-    private String nome;
-    private LocalDate fechaNacimiento;
+    protected String nome;
+    protected LocalDate fechaNacimiento;
 
     public Persoa(String nome, LocalDate fechaNacimiento) {
         this.nome = nome;
         this.fechaNacimiento = fechaNacimiento;
     }
+
     abstract boolean eMaiorIdade();
 
     protected int calcularIdade(){
