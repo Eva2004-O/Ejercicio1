@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public enum Casa {
+    GRYFFINDOR,
+    HUFFLEPUF,
+    RAVENCLAW,
+    SLYTHERIN;
 }
