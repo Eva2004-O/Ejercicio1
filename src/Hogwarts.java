@@ -31,5 +31,16 @@ public class Hogwarts {
             }
         }
     }
+    public void  asignarProfesor(Profesor profesor, String materia){
+        materias.put(materia,profesor);
+    }
+    public void listarProfesores(){
+        Iterator<String> iterator = materias.keySet().iterator();
+        while (iterator.hasNext()){
+            String materia = iterator.next();
+            System.out.println("La materia: "+ materia + " es impartida por el profesor " + materias.get(materia));
+        }
+    }
+
     
 }
