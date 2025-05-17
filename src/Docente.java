@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public interface Docente {
+
+    void imponerDisciplina();
+
+    void disciplinar();
 }
