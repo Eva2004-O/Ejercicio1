@@ -20,4 +20,14 @@ public class Profesor extends Mago implements Docente {
         int fraseEscogida = r1.nextInt(frases.length);
         System.out.println(frases[fraseEscogida]);
     }
+
+    @Override
+    public String toString() {
+        return "Profesor{" +
+                "TipoVasoira='" + TipoVasoira + '\'' +
+                ", casa=" + casa +
+                ", nome='" + nome + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
+    }
 }
