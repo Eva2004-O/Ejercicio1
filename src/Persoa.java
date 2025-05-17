@@ -10,6 +10,10 @@ public abstract class Persoa {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     abstract boolean eMaiorIdade();
 
     protected int calcularIdade(){

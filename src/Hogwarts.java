@@ -14,7 +14,6 @@ public class Hogwarts {
     }
 
     public void engadirAlumno(Mago mago){
-        alumnos.add(mago);
         Casa[] casas = Casa.values();
         Random r1 = new Random();
         int casaRandom = r1.nextInt(casas.length);
@@ -42,5 +41,20 @@ public class Hogwarts {
         }
     }
 
-    
+    public ArrayList<Mago> alumnadoCasa(Casa casa){
+        ArrayList<Mago> alumnado = new ArrayList<>();
+        for (Mago mago : alumnos){
+            if (mago.casa.equals(casa)){
+                alumnado.add(mago);
+            }
+        }
+        return alumnado;
+    }
+
+    @Override
+    public String toString() {
+        return "Hogwarts{" +
+                "alumnos=" + alumnos +
+                '}';
+    }
 }
